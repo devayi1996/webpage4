@@ -11,7 +11,9 @@
         <!-- Header Section Start -->
         <header>
             <ul>
-                <li><a href="index.html">momondo</a></li>
+                <li><a href="index.html">
+                    <img src="./assets/img/c.png" alt="logo" width="100px" height="30px">
+                </a></li>
                 <li><a href="javascript:void()" class="active">Flights</a></li>
                 <li><a href="javascript:void()">Hotel</a></li>
                 <li><a href="javascript:void()">Car Hire</a></li>
@@ -29,17 +31,76 @@
         <!-- Header Section End -->
         <!-- Banner Section Start -->
         <section class="banner">
-            <main>
-               <h1>
-                "The best place to find
-            <span>the cheapest airfates"</span>
-                </h1>
-                <h3>
-                    -every single time
-                </h3>
-            </main>
-
-        </section>
+            <h1>"The best place to find  <br>  the cheapest airfares"</h1>
+            <h2>
+                 -every single time
+            </h2>
+             <form action="">
+                <div>
+                <div class="searchButton">
+                <button type="button" class="active">
+                    <i class="fa-solid fa-plane-departure"></i> Flights
+                </button>
+                <button type="button">
+                    <i class="fa-solid fa-hotel"></i> Hotels
+                </button>
+                <button type="button">
+                    <i class="fa-solid fa-car"></i> cars
+                </button>
+                </div>
+                <div class="searchForm">
+                    <label for="origin city">origin City</label>
+                    <input type="text" name="origin-city" id="origin-city" placeholder="Enter Origin City">
+                    
+                    <span><i class="fa-solid fa-arrow-right-arrow-left" style="color: aqua; margin-right: 0px 1px;"></i></span>
+                    
+                    <label for="Destination city">Destination City</label>
+                    <input type="text" name="Destination-City" id="Destination-city" placeholder="Enter Desatination City">
+                    
+                    <label for="Travel Start Date">Start Date</label>
+                    <input type="date" name="Start Date" id="Start Date" placeholder="Enter Travelling start Date">
+                    
+                    <label for="Travel End Date">End Date</label>
+                    <input type="date" name="End Date" id="End Date" placeholder="Enter Travelling End Date">
+                    
+                    <label for="Select-Passengers">Select-Passengers</label>
+                    <select name="select passengers" id="select passengers">
+                        <option selected>Select Passengers</option>
+                        <option value="1 pass">1 passengers</option>
+                        <option value="2 pass">2 passengers</option>
+                        <option value="3 pass">3 passengers</option>
+                        <option value="4 pass">4 passengers</option>
+                        <option value="5 pass">5 passengers</option>
+                    </select>
+                    
+                    <div class="info">
+                        <i class="fa-solid fa-suitcase-rolling"></i>&nbsp;
+                        Trip Type:
+                        <select name="trip type" id="trip type">
+                            <option selected>Select</option>
+                            <option value="return">Return Trip</option>
+                            <option value="Destination">Destination</option>
+                        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-money-bill-wave"></i>&nbsp;
+                        Tickit Class:
+                        <select name="tickit class" id="tickit class">
+                            <option selected>Select</option>
+                            <option value="economy">Economy</option>
+                            <option value="Business">Business</option>
+                            <option value="First">First Class</option>
+                        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" style="height:10px;width:10px;">
+                        Direct Flights Only
+                        <input type="checkbox" style="height: 10px; width: 10px; margin-left: 10px;">
+                        Include Nearby Airports
+                    </div>
+                </div>
+                </div>
+                <div>
+                <button type="submit" class="smt" >Search</button>
+                </div>
+             </form>
+             </section>
         <!-- Banner Section End -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
         <script src="./assets/js/script.js"></script>
