@@ -52,7 +52,7 @@ header ul li a.active{
 }
 .banner form{
     width: 85%;
-    height: 110px;
+    height: auto;
     background: #5c327a;
     position: absolute;
     bottom: 20px;
@@ -135,7 +135,7 @@ header ul li a.active{
         .newsletter{
             width: 100%;
             height: 300px;
-            background:linear-gradient(rgba(67, 135, 231, 0.7),rgba(25, 164, 214, 0.7)),url(../img/e.webp);
+            background:linear-gradient(rgba(66, 8, 99, 0.6), rgba(91, 4, 99, 0.8)),url(../img/e.webp);
             padding: 50px 130px;
             background-size: cover;
             position: relative;
@@ -172,6 +172,31 @@ header ul li a.active{
                 width: 100px;
                 height: 40px;
             }
-         
-
-    /* /Newsletter section End */
+          /* /Newsletter section End */
+          /* Destination Section Start */
+          .destination{
+            width: 100%;
+            height: 750px;
+            color: #fff;
+            padding: 50px 125px;
+            background: #20162f;
+          }
+          .destination h2{
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+            
+          }
+          .destination ul{
+            display: grid;
+            grid-template-columns:repeat(4, 23%);
+            grid-template-rows: 300px 300px;
+            grid-gap: 30px;
+          }
+          .destination ul li{
+            list-style: none;
+            border-radius: 5px;
+            text-align: center;
+            border: 5px solid #fff;
+          }
+          /* Destination Section End */
