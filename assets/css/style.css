@@ -146,13 +146,13 @@ header ul li a.active{
         .newsletter h2{
             position: absolute;
             top: 35%;
-            left: 50%;
+            left: 47%;
             color: #fff;
             }
         .newsletter p{
             position: absolute;
             top:50%;
-            left:45%;
+            left:40%;
             color: #fff;
             font-size: 20px;
         }
@@ -168,7 +168,7 @@ header ul li a.active{
             .newsletter form button{
                 position:absolute;
                 top: 70%;
-                left: 85%;
+                left: 84%;
                 width: 100px;
                 height: 40px;
             }
@@ -196,13 +196,12 @@ header ul li a.active{
           .destination ul li{
             list-style: none;
             border-radius: 5px;
-            /* text-align: center; */
             border: 5px solid #fff;
             background: #fff;
           }
           .destination ul li img{
             height: 150px;
-            width: 240px;
+            width: 100%;
             margin-bottom: 20px;
           }
           .destination ul li h4,p{
@@ -212,3 +211,54 @@ header ul li a.active{
             color: orange;
           }
           /* Destination Section End */
+          /* Estimate Section Start */
+          .estimate{
+            width: 100%;
+            height:180px;
+            padding-left: 125px;
+            background: #664CAD;
+            position: relative;
+          }
+          .estimate label{
+            display: none;
+          }
+          .estimate h2{
+            position: absolute;
+            left: 9%;
+            top: 25%;
+            color: #fff;
+          }
+          .estimate h4{
+            position: absolute;
+            left: 9%;
+            top: 42%;
+            color: #fff;
+           border-bottom:1px solid #fff;
+          }
+          .estimate form{
+            position: absolute;
+            left: 9%;
+            bottom:10%;
+          }
+          .estimate select, input{
+            width: 150px;
+            height: 40px;
+            text-align: center;
+          }
+          .estimate button{
+            width: 150px;
+            height: 40px;
+            background: #FE9102;
+            margin-left: 20px;
+          }
+          .estimate #tdate,#people,#email{
+            margin-left: 20px;
+          }
+          .estimate img{
+            height: 180px;
+            width: 300px;
+            position: absolute;
+            right: 0%;
+          }
+          
+          /* /Estimate Section End */
