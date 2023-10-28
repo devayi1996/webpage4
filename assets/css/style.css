@@ -15,7 +15,7 @@ header{
     background: #131e3a;
     display: flex;
     padding: 0px 125px;
-   align-items: center;
+    align-items: center;
     justify-content: space-between;
 }
 header ul li{
@@ -94,7 +94,7 @@ header ul li a.active{
       .banner form .info select{
          height: 20px; 
         width: 85px; 
-        background: none;
+        background:gray;
         border: none;
         color: #fff;
         }
@@ -134,42 +134,39 @@ header ul li a.active{
     /* Newsletter section Start */
         .newsletter{
             width: 100%;
-            height: 300px;
+             min-height:300px;
             background:linear-gradient(rgba(66, 8, 99, 0.6), rgba(91, 4, 99, 0.8)),url(../img/e.webp);
-            padding: 50px 130px;
+            padding: 50px 125px;
             background-size: cover;
-            position: relative;
-             }
+            }
         .newsletter form label{
             display: none;
         }
+        .newsletter .news{
+          width: 60%;
+          height: 170px;
+          float: right;
+        }
         .newsletter h2{
-            position: absolute;
-            top: 35%;
-            left: 47%;
+           text-align: center;
             color: #fff;
+            margin: 20px;
             }
         .newsletter p{
-            position: absolute;
-            top:50%;
-            left:40%;
+            margin: 20px;
             color: #fff;
             font-size: 20px;
         }
          .newsletter  form input{ 
-            position: absolute;
-            top:70%;
-            left: 45%;
+            margin: 20px;
             color: #fff;
             border:solid #fff 2px;
             background: none;
             width: 500px;
-            height: 40px;}
+            height: 40px;
+          }
             .newsletter form button{
-                position:absolute;
-                top: 70%;
-                left: 84%;
-                width: 100px;
+               width: 100px;
                 height: 40px;
             }
           /* /Newsletter section End */
@@ -184,15 +181,13 @@ header ul li a.active{
             color: #fff;
             text-align: center;
             margin-bottom: 20px;
-            
-          }
+             }
           .destination ul{
             display: grid;
             grid-template-columns:repeat(4, 23%);
             grid-template-rows: 300px 300px;
             grid-gap: 30px;
-           
-          }
+           }
           .destination ul li{
             list-style: none;
             border-radius: 5px;
@@ -214,31 +209,29 @@ header ul li a.active{
           /* Estimate Section Start */
           .estimate{
             width: 100%;
-            height:180px;
-            padding-left: 125px;
+            height:auto;
+            display: flex;
+            justify-content: space-between;  
             background: #664CAD;
-            position: relative;
-          }
+            }
           .estimate label{
             display: none;
           }
           .estimate h2{
-            position: absolute;
-            left: 9%;
-            top: 25%;
-            color: #fff;
+            padding-top: 50px;
+            padding-left: 125px;
+          color: #fff;
           }
           .estimate h4{
-            position: absolute;
-            left: 9%;
-            top: 42%;
-            color: #fff;
-           border-bottom:1px solid #fff;
+            padding-left: 125px;
+           color: #fff;
+           /* border-bottom:1px solid #fff; */
           }
           .estimate form{
-            position: absolute;
-            left: 9%;
-            bottom:10%;
+            padding-top: 20px;
+            padding-left: 125px;
+            padding-bottom: 50px;
+            
           }
           .estimate select, input{
             width: 150px;
@@ -255,10 +248,99 @@ header ul li a.active{
             margin-left: 20px;
           }
           .estimate img{
-            height: 180px;
+            height: 200px;
             width: 300px;
-            position: absolute;
-            right: 0%;
           }
-          
           /* /Estimate Section End */
+          /* Blog Section Start */
+        .blog{
+          width: 100%;
+          height: auto;
+          padding: 30px 125px;
+        }
+        .blog h2{
+          margin-bottom: 10px;
+          text-align: center;
+        }
+        .blog h2+p{
+          text-align: center;
+          padding: 0px 200px;
+        }
+        .blog-content div img{
+          width: 160px;
+          height: 170px;
+         }
+         .blog-content {
+          display: flex;
+           margin: 10px auto; 
+         }
+         .blog-content div{
+          display: flex;
+          padding: 10px;
+         }
+         .blog-content div div{
+          display: inline-block;
+         }
+         .blog-content div #first{
+          padding-bottom: 10px;
+         }
+         .blog-content div #second{
+          padding-top: 10px;
+         }
+      /* /Blog Section End*/
+      /* Footer Section Start */
+      footer{
+        width: 100%;
+        height: auto;
+        padding: 50px 125px;
+        background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(../img/e.webp); 
+        }
+       footer .topfooter, footer .bottomfooter{
+        display: flex;
+        justify-content: space-between;
+       }
+      footer h3{
+        color: #918E97;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      footer ul li{
+        list-style: none;
+      }
+      footer ul li a{
+        color: #918E97;
+      }
+      footer ul li a span{
+        color: #fff;
+        font-weight: bold;
+      }
+      footer .international div{
+        display: flex;
+        justify-content: space-between;
+      }
+      footer .international div .inter1{
+        margin-right: 50px;
+      }
+      footer .international div img{
+        width: 15px;
+        height: 10px;
+      }
+      footer .bottomfooter{
+        margin-top: 40px;
+      }
+      footer .bottomfooter .footmenu ul li{
+        display: inline-block;
+        padding-left: 20px;
+        }
+        footer .bottomfooter .footmenu ul li a,#web{
+          color: #fff;
+        }
+        footer .bottomfooter .social ul li{
+          display: inline-block;
+          padding: 10px;
+        }
+        footer .bottomfooter .footmenu{
+          margin-right: 120px;
+        }
+      /* /Footer Section End */
